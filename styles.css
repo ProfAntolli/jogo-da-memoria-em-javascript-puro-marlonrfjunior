@@ -11,15 +11,42 @@ body {
   background: linear-gradient(orange, yellow);
 }
 
+#btnEasy,#btnMid,#btnHard{
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: arial;
+    background: linear-gradient(to bottom, #5A86FF, #335AD0);
+    border: solid #7CAFFF 1px;
+    border-radius: 5px;
+    padding:15px;
+    text-shadow: 0px 1px 2px #000000;
+    box-shadow: 0px 1px 5px #0D2444;
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+     
+     display: flex;
+     align-items: center;
+}
+#btnEasy,#btnMid,#btnHard:hover{
+    opacity: 0.9;
+    background: linear-gradient(to bottom, #5A86FF, #335AD0);
+    box-shadow: 0px 1px 2px #000000;
+}
+
 /* Card style */
 
 .memory-game {
-  width: 640px;
+    width: 640px;
   height: 640px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+}
+
+.level-game {
 }
 
 
@@ -36,7 +63,7 @@ body {
 
 .memory-card:active {
    transform: scale(0.87);
-   transition: transform .4s;
+   transition: transform .2s;
 }
 
 .memory-card.flip {
