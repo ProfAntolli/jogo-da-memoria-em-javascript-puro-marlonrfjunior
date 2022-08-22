@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   display: flex;
-  background: #060AB2;
+  background: linear-gradient(orange, yellow);
 }
 
 /* Card style */
@@ -19,6 +19,7 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  perspective: 1000px;
 }
 
 
@@ -28,6 +29,18 @@ body {
   margin: 5px;
   position: relative;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active {
+   transform: scale(0.87);
+   transition: transform .4s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
 }
 
 .front-face,
@@ -37,5 +50,9 @@ body {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #FFFFFF;
+  backface-visibility: hidden;
+}
+.front-face {
+  transform: rotateY(180deg);
 }
