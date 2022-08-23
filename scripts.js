@@ -1,11 +1,11 @@
 var cards = document.querySelectorAll('.memory-card');
 
-var cardsToLoad = [{name: "angular"}
-                   ,{name: "aurelia"}
-                   ,{name: "backbone"}
-                   ,{name: "ember"}
-                   ,{name: "react"}
-                   ,{name: "vue"}];
+var cardsToLoad = [{name: "yoda.png"}
+                   ,{name: "tieFighter.png"}
+                   ,{name: "nabooShip.png"}
+                   ,{name: "r2d2.png"}
+                   ,{name: "clamandaloriano.png"}
+                   ,{name: "grogu.png"}];
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
@@ -78,12 +78,12 @@ function loadCards(level) {
         let card_container = `
 
               <div class="memory-card" data-framework="${identificador}">
-                <img class="front-face" src="img/${identificador}.svg" alt="Face da Carta">
-                <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
+                <img class="front-face" src="img/${identificador}" alt="Face da Carta">
+                <img class="back-face" src="img/starWars.svg" alt="Verso da Carta">
               </div>
               <div class="memory-card" data-framework="${identificador}">
-                <img class="front-face" src="img/${identificador}.svg" alt="Face da Carta">
-                <img class="back-face" src="img/js-badge.svg" alt="Verso da Carta">
+                <img class="front-face" src="img/${identificador}" alt="Face da Carta">
+                <img class="back-face" src="img/starWars.svg" alt="Verso da Carta">
               </div>
 `;
       card_section.innerHTML += card_container;

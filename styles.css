@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   display: flex;
-  background: linear-gradient(orange, yellow);
+  background: linear-gradient(blue, blue 0%);
 }
 
 #btnEasy,#btnMid,#btnHard{
